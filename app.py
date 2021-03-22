@@ -5,12 +5,12 @@ import plotly.express as px
 import pandas as pd
 
 
-
 def StartDashApp(server):
 
     external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
     app = dash.Dash(__name__,
                     server=server,
+                    routes_pathname_prefix='/dash/',
                     external_stylesheets=external_stylesheets)
 
 
@@ -31,5 +31,5 @@ def StartDashApp(server):
     ])
 
 
-    # app.run_server(port=5000, debug=True)
+    # app.run_server(port=8050, debug=True)
 
